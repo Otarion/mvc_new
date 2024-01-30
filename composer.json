@@ -12,7 +12,11 @@
     "autoload": {
         "psr-4": {
             "MVC\\": "src/",
-            "App\\": "app/"
+            "App\\": "app/",
+            "Request\\":"src/",
+            "Route\\":"app/",
+            "Controller\\":"app/Controllers",
+            "HelloController\\":"app/Controllers"
         },
         "files": [
             "app/functions.php"
