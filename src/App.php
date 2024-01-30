@@ -31,7 +31,7 @@ class App
         $this -> singleton('request', function(){
 
             //Créer une nouvelle instance de la classe Request
-            $request = new \Request();
+            $request = new Request();
 
             //Renvoyer l'instance de la classe Request 
             return $request;
