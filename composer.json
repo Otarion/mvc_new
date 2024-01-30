@@ -12,7 +12,7 @@
     "autoload": {
         "psr-4": {
             "MVC\\": "src/",
-            "App\\": "app/",
+            "App\\": "src/",
             "Request\\":"src/",
             "Route\\":"app/",
             "Controller\\":"app/Controllers",

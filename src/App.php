@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace MVC;
 
@@ -26,7 +26,17 @@ class App
     }
 
     // Ajout des services au service container
-    public function boot(): void {}
+    public function boot(): void {
+
+        $this -> singleton('request', function(){
+
+            //Créer une nouvelle instance de la classe Request
+            $request = new \Request();
+
+            //Renvoyer l'instance de la classe Request 
+            return $request;
+    });
+    }
 
     // Permet d'ajouter un service au service container
     public function singleton(string $name, \Closure $closure): void
