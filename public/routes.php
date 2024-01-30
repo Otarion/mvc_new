@@ -1,8 +1,7 @@
 <?php declare(strict_types=1);
 
-use App\Controllers\HelloController;
-use MVC\Route; // N'existe pas encore mais ça va venir !
+use MVC\Route;
 
 return [
-    Route::get('/', [HelloController::class, 'index']),
+    Route::get('/', [HelloController::class, 'index'])
 ];

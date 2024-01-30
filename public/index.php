@@ -17,5 +17,6 @@ $app->singleton('bar', fn(MVC\App $app) => new class () {});
 dd(
     $app,
     $app->make('bar'),
-    $app->make('request')
+    $app->make('request'),
+    
 );
