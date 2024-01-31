@@ -3,5 +3,6 @@
 use MVC\Route;
 
 return [
-    Route::get('/', [HelloController::class, 'index'])
+    Route::get('/', [App\Controllers\HelloController::class, 'index']),
+    Route::get('/hello/{name}', [App\Controllers\HelloController::class, 'hello'])
 ];

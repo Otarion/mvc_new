@@ -18,5 +18,5 @@ dd(
     $app,
     $app->make('bar'),
     $app->make('request'),
-    
+    $routes = require_once __DIR__ .'/../public/routes.php'
 );
